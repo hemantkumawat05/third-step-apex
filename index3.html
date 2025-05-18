@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health care center</title>
+        <link rel="stylesheet" href="styles3.css">
+
+</head>
+<body>
+   
+    <!-- Real-time Health Data Section -->
+<section class="api-data">
+  <div class="container">
+    <h2>Real-time Health Statistics</h2>
+    <p class="subtitle">Powered by CDC and WHO data APIs</p>
+    
+    <div class="data-cards">
+      <div class="data-card">
+        <h3>COVID-19 Cases</h3>
+        <div class="data-value" id="covidCases">Loading...</div>
+        <p>United States (Last 7 Days)</p>
+      </div>
+      <div class="data-card">
+        <h3>Vaccination Rate</h3>
+        <div class="data-value" id="vaccinationRate">Loading...</div>
+        <p>Percentage of Population</p>
+      </div>
+      <div class="data-card">
+        <h3>Hospital Capacity</h3>
+        <div class="data-value" id="hospitalCapacity">Loading...</div>
+        <p>National Average</p>
+      </div>
+    </div>
+    
+    <button id="refreshData" class="btn btn-secondary">
+      <i class="fas fa-sync-alt"></i> Refresh Data
+    </button>
+  </div>
+</section>
+
+
+
+
+<!-- Health Statistics Carousel -->
+<section class="stats-carousel">
+  <div class="container">
+    <h2>Healthcare Insights</h2>
+    <p class="subtitle">Discover the latest health statistics and trends</p>
+    
+    <div class="carousel-container">
+      <button class="carousel-btn prev-btn" aria-label="Previous slide">&#10094;</button>
+      
+      <div class="carousel-slides">
+        <div class="carousel-slide active">
+          <img src="dr.png" alt="Healthcare statistics">
+          <div class="slide-content">
+            <h3>Patient Readmission Rates</h3>
+            <p>predictions reduce readmissions by up to 25%</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="hippa.png" alt="Healthcare statistics">
+          <div class="slide-content">
+            <h3>Operational Efficiency</h3>
+            <p>Hospitals using our platform see 30% faster discharge processes</p>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <img src="realtime.png" alt="Healthcare statistics">
+          <div class="slide-content">
+            <h3>Cost Savings</h3>
+            <p>Average of $1.2M annual savings per facility</p>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carousel-btn next-btn" aria-label="Next slide">&#10095;</button>
+    </div>
+    
+    <div class="carousel-dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</section>
+
+
+<script src="script3.js"></script>
+</body>
+</html>
